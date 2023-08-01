@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-#  schedule:
-#    - cron: "0 0 * * *"
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   autogreen:
@@ -16,9 +16,9 @@ jobs:
   
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: kamoraseamus@gmail.com
 
-      - name: Auto green
+      - name: kamoraseamus
         run: |
           git config --local user.email "justjavac@gmail.com"
           git config --local user.name "${{ github.actor }}"
